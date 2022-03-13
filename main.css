@@ -230,7 +230,7 @@ color: var(--blue-color);
 .about{
     min-height: 100vh;
     
-    background: linear-gradient(-45deg, var(--orange-color),#e73c7e, var(--blue-color));
+    background: linear-gradient(-45deg, var(--orange-color),#f8cc3b, #49eefa , var(--blue-color));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     padding-top: 20px;
@@ -365,6 +365,55 @@ color: var(--blue-color);
 }
 .about .container .contain .right-side .Experience .script p:last-child{
     font-size: 17px;
+}
+@media (min-width:1200px){
+    .about .container .contain .right-side{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .about .container .contain .right-side h2{
+        font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 60px;
+    }
+    .about .container .contain .right-side hr{
+        width: 105%;
+        height: 4px;
+        background-color: black;
+        border-radius: 50px;
+        margin: 0 0 10px 0;
+    }
+    .about .container .contain .right-side .Experience{
+        align-self: flex-start;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .about .container .contain .right-side .Experience .date{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .container .contain .right-side .Experience .script{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0px 0 129px;
+}
+.about .container .contain .right-side .Experience .script p:first-child{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.about .container .contain .right-side .Experience .script p:last-child{
+    font-size: 17px;
+    align-self: flex-start;
+    opacity: 0.8;
+}
 }
 @media (max-width:992px){
     .about .container .contain{
