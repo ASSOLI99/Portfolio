@@ -602,14 +602,8 @@ color: var(--blue-color);
         transform: translateX(500px);
     }
 }
-
 /* projects end */
 /* testimonial  start*/
-
-
-.testimonial {
-
-}
 .testimonial .main-text {
     font-size: 40px;
     text-align: center;
