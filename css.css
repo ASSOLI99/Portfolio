@@ -1,0 +1,70 @@
+@media (max-width:992px){
+    .about .container .contain .left-side1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+.about .container .contain .left-side1 .skills {
+        justify-content: center;
+        align-items: center;
+    }
+    .about .container .contain .left-side1 .skills .skill {
+        align-items: center;
+        width: 150px;
+    }
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 120px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 120px;
+    }
+    .about .container .contain .left-side1 .secondery-experince{
+        text-align: center;
+    }
+}
+@media (max-width:710px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 60px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 60px;
+    }
+}
+@media (max-width:588px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 15px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 15px;
+    }
+}
+@media (max-width:497px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 5px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 5px;
+    }
+    .about .container .contain .left-side1 .skills .skill p:first-child {
+        font-size: 15px;
+    padding: 5px 10px;
+    }
+    .about .container .contain .left-side1 .skills .skill p:last-child {
+        font-size: 10px;
+    }
+    .about .container .contain .left-side1 .skills .skill {
+        width: 50px;
+        align-items: center;
+    }
+    .about .container .contain .left-side1 .main-job {
+        font-size: 25px;
+        text-align: center;
+    }
+    .about .container .contain .left-side1 .main-text {
+        font-size: 40px;
+    }
+    .about .container .contain .left-side1 .secondery-experince {
+        font-size: 12px;
+        text-align: center;
+    }
+}

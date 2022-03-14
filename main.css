@@ -227,7 +227,6 @@ color: var(--blue-color);
     background: linear-gradient(-45deg, var(--orange-color),#f8cc3b, #49eefa , var(--blue-color));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    border-bottom: 2px solid black;
 }
 @keyframes gradient {
 	0% {
@@ -256,8 +255,8 @@ color: var(--blue-color);
     font-style: italic;
 }
 .about .container .contain .left-side .main-job{
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 45px;
     margin: 25px 0;
 }
 .about .container .contain .left-side .secondery-experince{
@@ -271,8 +270,8 @@ color: var(--blue-color);
     flex-direction: column;
 }
 .about .container .contain .left-side .skills .title{
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 35px;
+    font-weight: 500;
     font-style: italic;
 }
 .about .container .contain .left-side .skills .side-1{
@@ -305,6 +304,66 @@ color: var(--blue-color);
     font-weight: bold;
     
 }
+.about .container .contain .left-side1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about .container .contain .left-side1 .main-text{
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+.about .container .contain .left-side1 .main-job{
+    font-weight: 800;
+    font-size: 45px;
+    margin: 25px 0;
+}
+.about .container .contain .left-side1 .secondery-experince{
+    opacity: 0.7;
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+}
+.about .container .contain .left-side1 .skills{
+    display: flex;
+    flex-direction: column;
+}
+.about .container .contain .left-side1 .skills .title{
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+}
+.about .container .contain .left-side1 .skills .side-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about .container .contain .left-side1 .skills .side-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about .container .contain .left-side1 .skills .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 180px;
+    margin: 25px 0 10px;
+}
+.about .container .contain .left-side1 .skills .skill p:first-child{
+    font-size: 30px;
+    background-color: #000000;
+    color: white;
+    padding: 17px 25px;
+    border-radius: 50%;
+}
+.about .container .contain .left-side1 .skills .skill p:last-child{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
 .about .container .contain .right-side{
     display: flex;
     flex-direction: column;
@@ -321,30 +380,6 @@ color: var(--blue-color);
     border: 1.6px black solid;
     border-radius: 33px;
     margin: 0 0 10px 0;
-}
-.about .container .contain .right-side .Experience{
-    align-self: center;
-}
-
-.about .container .contain .right-side .Experience .date{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.about .container .contain .right-side .Experience .script{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.about .container .contain .right-side .Experience .script p:first-child{
-    font-size: 25px;
-    font-weight: bold;
-}
-.about .container .contain .right-side .Experience .script p:last-child{
-    font-size: 17px;
 }
 @media (min-width:1200px){
     .about .container .contain .right-side{
@@ -366,36 +401,18 @@ color: var(--blue-color);
         border-radius: 50px;
         margin: 0 0 10px 0;
     }
-    .about .container .contain .right-side .Experience{
-        align-self: flex-start;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
+}
+@media (max-width:1202px){
+    .about .container .contain .left-side1 .skills .skill{
+        width: 150px;
+        align-items: center;
     }
-    .about .container .contain .right-side .Experience .date{
-        display: flex;
-    flex-direction: column;
-    align-items: center;
+    .about .container .contain .left-side .skills .skill{
+        width: 150px;
+        align-items: center;
+    }
+   
 }
-.about .container .contain .right-side .Experience .script{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0px 0 129px;
-}
-.about .container .contain .right-side .Experience .script p:first-child{
-    font-size: 27px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.about .container .contain .right-side .Experience .script p:last-child{
-    font-size: 17px;
-    align-self: flex-start;
-    opacity: 0.8;
-}
-}
-
 @media (max-width:992px){
     .about .container .contain{
         flex-direction: column;
@@ -448,6 +465,16 @@ color: var(--blue-color);
     .about .container .contain .left-side .skills .side-2 {
         gap: 5px;
     }
+    .about .container .contain .left-side .skills .title {
+        font-size: 27px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .about .container .contain .left-side1 .skills .title {
+        font-size: 27px;
+        font-weight: 500;
+        font-style: italic;
+    }
     .about .container .contain .left-side .skills .skill p:first-child {
         font-size: 15px;
     padding: 5px 10px;
@@ -460,7 +487,11 @@ color: var(--blue-color);
         align-items: center;
     }
     .about .container .contain .left-side .main-job {
-        font-size: 25px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about .container .contain .left-side1 .main-job {
+        font-size: 30px;
         text-align: center;
     }
     .about .container .contain .left-side .main-text {
@@ -476,11 +507,78 @@ color: var(--blue-color);
     .about .container .contain .right-side h2 {
         font-size: 40px;
     }
-    .about .container .contain .right-side .Experience .script p:first-child {
-        font-size: 18px;
-    }
     .about .container .contain .right-side hr {
         width: 70%;
+    }
+}
+@media (max-width:992px){
+    .about .container .contain .left-side1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+.about .container .contain .left-side1 .skills {
+        justify-content: center;
+        align-items: center;
+    }
+    .about .container .contain .left-side1 .skills .skill {
+        align-items: center;
+        width: 150px;
+    }
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 120px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 120px;
+    }
+    .about .container .contain .left-side1 .secondery-experince{
+        text-align: center;
+    }
+}
+@media (max-width:710px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 60px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 60px;
+    }
+}
+@media (max-width:588px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 15px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 15px;
+    }
+}
+@media (max-width:497px){
+    .about .container .contain .left-side1 .skills .side-1 {
+        gap: 5px;
+    }
+    .about .container .contain .left-side1 .skills .side-2 {
+        gap: 5px;
+    }
+    .about .container .contain .left-side1 .skills .skill p:first-child {
+        font-size: 15px;
+    padding: 5px 10px;
+    }
+    .about .container .contain .left-side1 .skills .skill p:last-child {
+        font-size: 10px;
+    }
+    .about .container .contain .left-side1 .skills .skill {
+        width: 50px;
+        align-items: center;
+    }
+    .about .container .contain .left-side1 .main-job {
+        font-size: 25px;
+        text-align: center;
+    }
+    .about .container .contain .left-side1 .main-text {
+        font-size: 40px;
+    }
+    .about .container .contain .left-side1 .secondery-experince {
+        font-size: 12px;
+        text-align: center;
     }
 }
 /* about end */
@@ -996,3 +1094,103 @@ color: var(--orange-color);
 }
 
 /* footer end */
+/* Experience start */
+.Experience{
+padding: 25px 0;
+}
+.Experience .container{
+
+}
+.Experience .container .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Experience .container .main-content .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Experience .container .main-content .main-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Experience .container .main-content .main-text h2{
+    margin-bottom: 8px;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+.Experience .container .main-content .main-text p{
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.Experience .container .main-content .content .year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Experience .container .main-content .content .year h3{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--blue-color);
+}
+.Experience .container .main-content .content .year p{
+
+}
+.Experience .container .main-content .content .company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Experience .container .main-content .content .company h3{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--blue-color);
+}
+.Experience .container .main-content .content .company p{
+
+}
+.Experience .container .main-content .content .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Experience .container .main-content .content .projects h3{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--blue-color);
+}
+.Experience .container .main-content .content .projects p{
+
+}
+.Experience .container .main-content .CV{
+    margin: 30px 0 8px;
+}
+.Experience .container .main-content .CV a{
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 7px 12px;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--blue-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.Experience .container .main-content .CV a:hover{
+    color: var(--dark-color);
+}
+
+/* Experience end */
