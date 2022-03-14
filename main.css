@@ -60,7 +60,7 @@ color: var(--orange-color);
 /* nav end */
 /* Home start */
 .Home{
-    min-height: calc(100vh - 94px);
+    padding-top: 25px;
 }
 .Home .contain{
     display: flex;
@@ -179,6 +179,10 @@ color: var(--blue-color);
     }
 }
 @media (max-width: 440px){
+    .Home{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
     .Home .right-side img{
         width: 300px;
         }
@@ -217,11 +221,9 @@ color: var(--blue-color);
 /* Home end */
 /* about start*/
 .about{
-    min-height: 100vh; 
     background: linear-gradient(-45deg, var(--orange-color),#f8cc3b, #49eefa , var(--blue-color));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    padding-top: 20px;
     border-bottom: 2px solid black;
 }
 @keyframes gradient {
@@ -259,6 +261,7 @@ color: var(--blue-color);
     opacity: 0.7;
     font-size: 18px;
     margin-bottom: 30px;
+    
 }
 .about .container .contain .left-side .skills{
     display: flex;
@@ -285,7 +288,7 @@ color: var(--blue-color);
     justify-content: space-between;
     align-items: flex-start;
     width: 180px;
-    margin: 50px 0 10px;
+    margin: 25px 0 10px;
 }
 .about .container .contain .left-side .skills .skill p:first-child{
     font-size: 30px;
@@ -413,6 +416,9 @@ color: var(--blue-color);
     .about .container .contain .left-side .skills .side-2 {
         gap: 120px;
     }
+    .about .container .contain .left-side .secondery-experince{
+        text-align: center;
+    }
 }
 @media (max-width:710px){
     .about .container .contain .left-side .skills .side-1 {
@@ -450,6 +456,7 @@ color: var(--blue-color);
     }
     .about .container .contain .left-side .main-job {
         font-size: 25px;
+        text-align: center;
     }
     .about .container .contain .left-side .main-text {
         font-size: 40px;
