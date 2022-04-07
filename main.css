@@ -1021,7 +1021,7 @@ width: calc(100% - 30px);
     height: 48vh;
 }
 .contact .container .contain .right-side img{
-    width: 80%;
+    width: 85%;
 }
 }
 @media (max-width:395px){
